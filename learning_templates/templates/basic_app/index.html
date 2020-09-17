@@ -1,0 +1,8 @@
+{% extends 'basic_app/base.html' %}
+{% load mytemplate %}
+{% block content %}
+  <h1>Welcome to INDEX page</h1>
+  <h1>"{{ text|cut:"world" }}"</h1>
+  <h1>Added number {{ number|add:"2" }}</h1>
+
+{% endblock content%}
